@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/configuracao.css">
+     <!--link fonte-->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Configurações</title>
+</head>
+<body>
+    <main id="main_content">
+        <h2 class="configuracao-titulo">Configurações da Clínica</h2>
+        <form class="configuracao-formulario">
+            <div class="form-group full-width">
+                <label for="nome_clinica">Nome da Clínica</label>
+                <input type="text" id="nome_clinica" placeholder="Digite o nome da clínica" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="telefone_clinica">Telefone da Clínica</label>
+                <input type="tel" id="telefone_clinica" placeholder="Digite o telefone da clínica" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email_clinica">E-mail da Clínica</label>
+                <input type="email" id="email_clinica" placeholder="Digite o e-mail da clínica" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="endereco_clinica">Endereço da Clínica</label>
+                <input type="text" id="endereco_clinica" placeholder="Digite o endereço da clínica" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="especialidades">Especialidades da Clínica</label>
+                <select id="especialidades" required>
+                    <option value="">Selecione uma especialidade</option>
+                    <option value="fisioterapia">Fisioterapia</option>
+                    <option value="ortopedia">Ortopedia</option>
+                    <option value="neurologia">Neurologia</option>
+                    <option value="pediatria">Pediatria</option>
+                    <option value="geriatria">Geriatria</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="hora_abertura">Horário de Abertura</label>
+                <input type="time" id="hora_abertura" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="hora_fechamento">Horário de Fechamento</label>
+                <input type="time" id="hora_fechamento" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="senha_usuario">Nova Senha do Usuário</label>
+                <input type="password" id="senha_usuario" placeholder="Digite a nova senha" required>
+            </div>
+    
+            <div class="form-group full-width">
+                <label for="confirmar_senha">Confirmar Senha</label>
+                <input type="password" id="confirmar_senha" placeholder="Confirme a nova senha" required>
+            </div>
+    
+            <div class="form-group full-width">
+                <input type="submit" value="Salvar Configurações">
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>

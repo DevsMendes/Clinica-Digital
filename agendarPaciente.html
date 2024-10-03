@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/agendarPaciente.css">
+     <!--link fonte-->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Agendar Paciente</title>
+</head>
+<body>
+    <main class="agendar-container">
+        <h2 class="agendar-titulo">Agendar Paciente</h2>
+        <form class="agendar-formulario">
+            <div class="agendar-campo">
+                <label for="nomePaciente" class="agendar-label">Nome Completo do Paciente</label>
+                <input type="text" id="nomePaciente" name="nomePaciente" class="agendar-input" required>
+            </div>
+
+            <div class="agendar-campo">
+                <label for="dataNascimento" class="agendar-label">Data de Nascimento</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" class="agendar-input" required>
+            </div>
+
+            <div class="agendar-campo">
+                <label for="telefone" class="agendar-label">Telefone de Contato</label>
+                <input type="tel" id="telefone" name="telefone" class="agendar-input" required>
+            </div>
+
+            <div class="agendar-campo">
+                <label for="email" class="agendar-label">E-mail</label>
+                <input type="email" id="email" name="email" class="agendar-input">
+            </div>
+
+            <div class="agendar-campo">
+                <label for="dataConsulta" class="agendar-label">Data da Consulta</label>
+                <input type="date" id="dataConsulta" name="dataConsulta" class="agendar-input" required>
+            </div>
+
+            <div class="agendar-campo">
+                <label for="horaConsulta" class="agendar-label">Horário da Consulta</label>
+                <input type="time" id="horaConsulta" name="horaConsulta" class="agendar-input" required>
+            </div>
+
+            <div class="agendar-campo">
+                <label for="tipoConsulta" class="agendar-label">Tipo de Consulta</label>
+                <select id="tipoConsulta" name="tipoConsulta" class="agendar-select" required>
+                    <option value="avaliacao">Avaliação</option>
+                    <option value="sessaoFisioterapia">Sessão de Fisioterapia</option>
+                    <option value="reavaliacao">Reavaliação</option>
+                </select>
+            </div>
+
+            <div class="agendar-campo">
+                <label for="observacoes" class="agendar-label">Observações</label>
+                <textarea id="observacoes" name="observacoes" class="agendar-textarea" rows="4"></textarea>
+            </div>
+
+            <div class="agendar-campo">
+                <label for="formaPagamento" class="agendar-label">Forma de Pagamento</label>
+                <select id="formaPagamento" name="formaPagamento" class="agendar-select" required>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="debito">Cartão de Débito</option>
+                    <option value="pix">PIX</option>
+                    <option value="dinheiro">Dinheiro</option>
+                </select>
+            </div>
+
+            <button type="submit" class="agendar-botao">Agendar Consulta</button>
+        </form>
+    </main>
+</body>
+</html>

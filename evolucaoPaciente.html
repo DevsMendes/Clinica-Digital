@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/evolucacaoPaciente.css">
+     <!--link fonte-->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Evolução Paciente</title>
+</head>
+<body>
+    <main id="main_content">
+        <h2 class="evolucao-titulo">Evolução do Paciente</h2>
+        <form class="evolucao-formulario">
+            <div class="form-group">
+                <label for="paciente_nome">Nome do Paciente</label>
+                <input type="text" id="paciente_nome" placeholder="Digite o nome do paciente" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="data_evolucao">Data da Evolução</label>
+                <input type="date" id="data_evolucao" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="observacoes">Observações</label>
+                <textarea id="observacoes" placeholder="Digite as observações sobre a evolução" required></textarea>
+            </div>
+    
+            <div class="form-group">
+                <label for="condicoes">Condições do Paciente</label>
+                <select id="condicoes" required>
+                    <option value="" disabled selected>Selecione as condições</option>
+                    <option value="estavel">Estável</option>
+                    <option value="melhorando">Melhorando</option>
+                    <option value="piorando">Piorando</option>
+                    <option value="critico">Crítico</option>
+                </select>
+            </div>
+    
+            <div class="form-group full-width">
+                <input type="submit" value="Registrar Evolução">
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>
