@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Evento de clique no botão de logout
     logoutButton.addEventListener("click", () => {
-        window.location.href = "login.html"; // Redireciona para a página de login
+        window.location.href = "index.html"; // Redireciona para a página de login
     });
 
     // Carrega o conteúdo inicial ao carregar a página
